@@ -1,17 +1,13 @@
-<p style="color: green"><%= notice %></p>
+<%= render '/navbar' %>
 
-<h1>Groups</h1>
+<p style="color: green"><%= notice %></p>
 
 <div class="cards_list">
   <% @groups.each do |group| %>
-    <%= link_to group, class:"card_link" do %>
+    <%= link_to group, class:"category-card" do %>
       <%= render group %>
     <% end %>
   <% end %>
 </div>
 
-<div class="site-header__end">
-  <%= link_to "Sign out", destroy_user_session_path, {:class => "button-si"} %>
-</div>
-
-<%= link_to "New group", new_group_path %>
+<%= link_to "Add Category", new_group_path, class: "category_button" %>

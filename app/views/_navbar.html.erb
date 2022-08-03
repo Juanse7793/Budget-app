@@ -5,7 +5,7 @@
         <% end %>
     </div>
 
-    <h2 class='nav-login'>LOG IN</H2>
+    <h2 class='nav-login'><%= render partial: 'partials/navtitle'%></H2>
 
     <div>
         <%= link_to destroy_user_session_path, method: :delete, class:"nav-btn" do %>
