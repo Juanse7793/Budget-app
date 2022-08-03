@@ -1,12 +1,6 @@
-<div id="<%= dom_id transaction %>">
-  <p>
-    <strong>Name:</strong>
-    <%= transaction.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= transaction.amount %>
-  </p>
-
-</div>
+ <%= link_to edit_group_transaction_path(@group, transaction), class:"card_link" do %>
+  <div class="group_card">
+    <p><%= transaction.name %></p>
+    <p>$ <%= transaction.amount %></p>
+  </div>
+<% end %>
