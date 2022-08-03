@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Groups</h1>
+
+<div class="cards_list">
+  <% @groups.each do |group| %>
+    <%= link_to group, class:"card_link" do %>
+      <%= render group %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="site-header__end">
+  <%= link_to "Sign out", destroy_user_session_path, {:class => "button-si"} %>
+</div>
+
+<%= link_to "New group", new_group_path %>
