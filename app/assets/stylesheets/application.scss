@@ -1,0 +1,195 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=proxima-nova:thin,extra-light,light,bold,100,200,300,400,500,600,700,800');
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #EFF3F4;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #3778C2;
+}
+
+.main-btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+    margin: 0;
+    padding: 0;
+}
+
+.log-in {
+    text-align: center;
+    width: 92%;
+    background-color: #3778C2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sign-up {
+    text-align: center;
+    width: 92%;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.div-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+
+.app-icon {
+    width: 98%;
+    height: 98%;
+    margin: 0 auto;
+    margin-bottom: auto;
+}
+
+.budget-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.developed {
+    text-align: start;
+    font-size: 0.85em;
+    font-family: proxima-nova, sans-serif;
+    font-style: lighter;
+    font-weight: 100;
+    color: black;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 99%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #3778C2;
+    margin-bottom: 25px;
+}
+
+.nav-btn {
+    color: white;
+    font-size: 1.5em;
+}
+
+.nav-btn:hover {
+    color: #901f1f;
+}
+
+.nav-login {
+    color: white;
+    font-size: 1.2em;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.inputs {
+    width: 90%;
+    margin: 15px auto;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+  
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.actions-btn {
+    width: 99%;
+    background-color: #5fb523;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.shared-links {
+    text-align: center;
+    color: gray;
+}
