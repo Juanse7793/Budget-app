@@ -1,15 +1,6 @@
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: %i[ show edit update destroy ]
-
-  # GET /transactions or /transactions.json
-  def index
-    @transactions = Transaction.all
-  end
-
-  # GET /transactions/1 or /transactions/1.json
-  def show
-  end
-
+  before_action :set_group, only: %i[new create edit update destroy]
+  before_action :set_transaction, only: %i[ edit update destroy ]
   # GET /transactions/new
   def new
     @transaction = Transaction.new
@@ -22,10 +13,12 @@ class TransactionsController < ApplicationController
   # POST /transactions or /transactions.json
   def create
     @transaction = Transaction.new(transaction_params)
+    @transaction.user_id = current_user.id
+    @transaction.group_id = @group.id
 
     respond_to do |format|
       if @transaction.save
-        format.html { redirect_to transaction_url(@transaction), notice: "Transaction was successfully created." }
+        format.html { redirect_to @group, notice: "Transaction was successfully created." }
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -63,8 +56,12 @@ class TransactionsController < ApplicationController
       @transaction = Transaction.find(params[:id])
     end
 
+    def set_group
+      @group = Group.find(params[:group_id])
+    end
+
     # Only allow a list of trusted parameters through.
     def transaction_params
-      params.require(:transaction).permit(:name, :amount)
+      params.require(:transaction).permit(:name, :amount).merge(user_id: current_user.id)
     end
 end

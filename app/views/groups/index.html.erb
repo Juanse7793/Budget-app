@@ -2,13 +2,16 @@
 
 <h1>Groups</h1>
 
-<div id="groups">
+<div class="cards_list">
   <% @groups.each do |group| %>
-    <%= render group %>
-    <p>
-      <%= link_to "Show this group", group %>
-    </p>
+    <%= link_to group, class:"card_link" do %>
+      <%= render group %>
+    <% end %>
   <% end %>
+</div>
+
+<div class="site-header__end">
+  <%= link_to "Sign out", destroy_user_session_path, {:class => "button-si"} %>
 </div>
 
 <%= link_to "New group", new_group_path %>

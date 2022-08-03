@@ -1,4 +1,4 @@
-<%= form_with(model: transaction) do |form| %>
+<%= form_with(model: [@group, @transaction]) do |form| %>
   <% if transaction.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
