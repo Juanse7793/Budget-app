@@ -15,7 +15,7 @@ This app is about building a mobile web application where you can manage your bu
 
 ## Live Demo
 
-- Here you can see the live demo => [LINK](https://powerful-island-41521.herokuapp.com/)
+- Here you can see the live demo (Mobile Version Only) => [LINK](https://budget-app-juanse7793.herokuapp.com/)
 
 ## Run it
 
