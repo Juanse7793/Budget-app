@@ -1,0 +1,336 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url('https://fonts.googleapis.com/css?family=proxima-nova:thin,extra-light,light,bold,100,200,300,400,500,600,700,800');
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #eff3f4;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3778c2;
+}
+
+.main-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  margin: 0;
+  padding: 0;
+}
+
+.log-in {
+  text-align: center;
+  width: 92%;
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.sign-up {
+  text-align: center;
+  width: 92%;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.div-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+}
+
+.app-icon {
+  width: 98%;
+  height: 98%;
+  margin: 0 auto;
+  margin-bottom: auto;
+}
+
+.budget-title {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.developed {
+  text-align: start;
+  font-size: 0.85em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+  margin-left: 0.7rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 99%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #3778c2;
+  margin-bottom: 25px;
+}
+
+.nav-btn {
+  color: white;
+  font-size: 1.5em;
+  padding: 0 10px;
+}
+
+.nav-btn:hover {
+  color: #901f1f;
+}
+
+.nav-login {
+  color: white;
+  font-size: 1.2em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.inputs {
+  width: 90%;
+  margin: 15px auto;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.actions-btn {
+  width: 99%;
+  background-color: #5fb523;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin: 30px 0;
+}
+
+.shared-links {
+  text-align: center;
+  color: gray;
+}
+
+.cards_list {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+  width: 100%;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+    color: #434654;
+    font-size: 1rem;
+  }
+}
+
+.category-card {
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.amount {
+  text-align: center;
+}
+
+.group_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.25rem 1rem;
+  background: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.group_card_left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.category_icon {
+  font-size: 3rem;
+}
+
+.category_button {
+  background: #5fb523;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  padding: 1.25rem 0;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.color {
+  color: #434654;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.red {
+  text-align: center;
+  background: #ff2a2a;
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 45px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+}
+
+.red-align {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t-title {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.select_icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.select_icon_label {
+  font-size: 1.2rem;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #434654;
+  margin: 1rem 1rem 2rem 0.7rem;
+}
+
+select {
+  font-size: 1.2rem;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #434654;
+  margin: 1rem 1rem 2rem 0;
+  width: 50%;
+  text-align: center;
+  height: 50px;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #434654;
+  margin-top: 30px;
+}

@@ -1,0 +1,13 @@
+<div class='navbar'>
+    <div>
+        <%= render partial: 'partials/navback' %>
+    </div>
+
+    <h2 class='nav-login'><%= render partial: 'partials/navtitle'%></H2>
+
+    <div>
+        <%= link_to destroy_user_session_path, method: :delete, class:"nav-btn" do %>
+          <span class="iconify" data-icon="gridicons:sign-out""></span>
+        <% end %>
+    </div>
+</div>

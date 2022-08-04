@@ -12,23 +12,21 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_area :name %>
+    <%= form.text_field :name, placeholder: 'Name', class:'inputs' %>
   </div>
 
   <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
+    <%= form.text_field :amount, placeholder: 'Amount in $', class:'inputs' %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Save Transaction", class:'actions-btn' %>
   </div>
 <% end %>
 
 
-<div class="actions_expense">
+<div class="red-align">
   <% if @transaction.id != nil && current_page?(edit_group_transaction_path(@group, @transaction)) %>
-    <%= button_to "Delete transaction", group_transaction_path(@group, @transaction), method: :delete, class: "app_button red_button" %>
+    <%= button_to "Delete transaction", group_transaction_path(@group, @transaction), method: :delete, class: "red" %>
   <% end %>
 </div>
