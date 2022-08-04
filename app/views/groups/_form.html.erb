@@ -1,0 +1,26 @@
+<%= form_with(model: group) do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.text_field :name, value: @group.name, placeholder: "Name", required: true, class: "inputs" %>
+  </div>
+
+  <div class="select_icon">
+    <%= form.label :icon, 'Select Icon:', class: "select_icon_label" %>
+    <%= form.select :icon, ["👞","👔","🎵","🎉","🎄","🎁","🍼","✈️", "🎮", "📚", "🏥", "🏈", "🎬", "🏠", "🐶", "🍻", "🍔", "🚗", "🖥"], value: @group.icon, required: true, class: "select_icon_menu" %>
+  </div>
+
+  <div>
+    <%= form.submit "Save Group", class: "actions-btn" %>
+  </div>
+<% end %>

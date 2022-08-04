@@ -1,0 +1,32 @@
+<%= form_with(model: [@group, @transaction]) do |form| %>
+  <% if transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.text_field :name, placeholder: 'Name', class:'inputs' %>
+  </div>
+
+  <div>
+    <%= form.text_field :amount, placeholder: 'Amount in $', class:'inputs' %>
+  </div>
+
+  <div>
+    <%= form.submit "Save Transaction", class:'actions-btn' %>
+  </div>
+<% end %>
+
+
+<div class="red-align">
+  <% if @transaction.id != nil && current_page?(edit_group_transaction_path(@group, @transaction)) %>
+    <%= button_to "Delete transaction", group_transaction_path(@group, @transaction), method: :delete, class: "red" %>
+  <% end %>
+</div>
