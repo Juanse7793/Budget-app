@@ -25,8 +25,8 @@
 <% end %>
 
 
-<div class="actions_expense">
+<div class="red-align">
   <% if @transaction.id != nil && current_page?(edit_group_transaction_path(@group, @transaction)) %>
-    <%= button_to "Delete transaction", group_transaction_path(@group, @transaction), method: :delete, class: "app_button red_button" %>
+    <%= button_to "Delete transaction", group_transaction_path(@group, @transaction), method: :delete, class: "red" %>
   <% end %>
 </div>

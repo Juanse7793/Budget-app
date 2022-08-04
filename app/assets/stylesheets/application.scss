@@ -108,6 +108,7 @@ a {
   font-style: normal;
   font-weight: 100;
   color: black;
+  margin-left: 0.7rem;
 }
 
 .main-container {
@@ -262,6 +263,9 @@ a {
 
 .color {
   color: #434654;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .red {
@@ -319,4 +323,14 @@ select {
     width: 50%;
     text-align: center;
     height: 50px;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #434654;
+    margin-top: 30px;
 }

@@ -1,6 +1,6 @@
  <%= link_to edit_group_transaction_path(@group, transaction), class:"card_link" do %>
   <div class="group_card">
-    <p><%= transaction.name %></p>
-    <p>$ <%= transaction.amount %></p>
+    <p class='color'><%= transaction.name %></p>
+    <p class='color'>$ <%= transaction.amount %></p>
   </div>
 <% end %>
