@@ -1,8 +1,6 @@
 <div class='navbar'>
     <div>
-        <%= link_to root_path, class:"nav-btn" do %>
-          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
-        <% end %>
+        <%= render partial: 'partials/navback' %>
     </div>
 
     <h2 class='nav-login'><%= render partial: 'partials/navtitle'%></H2>

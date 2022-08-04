@@ -1,0 +1,48 @@
+<%if current_user%>
+  <% if current_page?(groups_path) %>
+    <%= link_to root_path, class:"nav-btn" do %>
+      <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+    <% end %>
+
+  <% else %>
+    <% if @group %>
+      <% if @group.id == nil && current_page?(new_group_path) %>
+        <%= link_to groups_path, class:"nav-btn" do %>
+          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+        <% end %>
+      <% end %>
+
+      <% if @group.id != nil && current_page?(group_path(@group)) %>
+        <%= link_to groups_path, class:"nav-btn" do %>
+          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+        <% end %>
+      <% end %>
+
+      <% if @group.id != nil && current_page?(edit_group_path(@group)) %>
+        <%= link_to group_path(@group), class:"nav-btn" do %>
+          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <% if @transaction && @group %>
+      <% if @transaction.id == nil && current_page?(new_group_transaction_path(@group)) %>
+        <%= link_to group_path(@group), class:"nav-btn" do %>
+          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+        <% end %>
+      <% end %>
+
+      <% if @transaction.id != nil && current_page?(edit_group_transaction_path(@group, @transaction)) %>
+        <%= link_to group_path(@group), class:"nav-btn" do %>
+          <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+        <% end %>
+      <% end %>
+    <% end %>
+    
+  <% end %>
+
+<% else %>
+  <%= link_to root_path, class:"nav-btn" do %>
+    <span class="iconify" data-icon="eva:arrow-back-fill"></span>
+  <% end %>
+<%end%>
