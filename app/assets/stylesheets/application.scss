@@ -299,39 +299,38 @@ a {
 }
 
 .select_icon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .select_icon_label {
-    font-size: 1.2rem;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    color: #434654;
-    margin: 1rem 1rem 2rem 0.7rem;
-
+  font-size: 1.2rem;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #434654;
+  margin: 1rem 1rem 2rem 0.7rem;
 }
 
 select {
-    font-size: 1.2rem;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    color: #434654;
-    margin: 1rem 1rem 2rem 0;
-    width: 50%;
-    text-align: center;
-    height: 50px;
+  font-size: 1.2rem;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #434654;
+  margin: 1rem 1rem 2rem 0;
+  width: 50%;
+  text-align: center;
+  height: 50px;
 }
 
 .welcome {
-    text-align: center;
-    font-size: 1.8em;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    color: #434654;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #434654;
+  margin-top: 30px;
 }
