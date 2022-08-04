@@ -201,10 +201,20 @@ a{
     margin-bottom: 5rem;
     width: 100%;
     gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: #434654;
+        font-size: 1rem;
+    }
   }
 
 .category-card {
     text-decoration: none;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .amount {
@@ -254,3 +264,31 @@ a{
     color: #434654;
   }
   
+  .red {
+    text-align: center;
+    background: #ff2a2a;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 45px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+  }
+
+  .red-align {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .t-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+  }

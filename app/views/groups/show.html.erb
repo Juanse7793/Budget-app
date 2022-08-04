@@ -2,25 +2,23 @@
 
 <p style="color: green"><%= notice %></p>
 
-<div>
+<div class='category-card'>
 <%= link_to edit_group_path(@group) do %>
   <%= render @group %>
 <% end %>
 </div>
 
 
-<div>
-  <%= link_to "Back to groups", groups_path %>
-
-  <%= button_to "Remove Category", @group, method: :delete %>
+<div class='red-align'>
+  <%= button_to "Remove Category", @group, method: :delete, class:'red' %>
 </div>
 
 
 <div>
-  <h1>Transactions<h1>
+  <h1 class='t-title'>Transactions<h1>
   <div class="cards_list">
     <%= render @group.transactions.order(created_at: :desc) %>
   </div>
 
-  <%= link_to "New transaction", new_group_transaction_path(@group) %>
+  <%= link_to "New Transaction", new_group_transaction_path(@group), class: "category_button" %>
 </div>
