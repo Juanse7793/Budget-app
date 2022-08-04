@@ -10,7 +10,12 @@ This app is about building a mobile web application where you can manage your bu
 
 - Ruby
 - Ruby on Rails
+- Heroku
+- HTML/CSS
 
+## Live Demo
+
+- Here you can see the live demo => [LINK](https://powerful-island-41521.herokuapp.com/)
 
 ## Run it
 
@@ -49,10 +54,13 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 - Hat tip to anyone whose code was used
 - Inspiration
 
+## Video
+
+- [Link to the video](https://drive.google.com/file/d/1xlvG1vAnbATt01U7_DRdkd0kZZvVFN1d/view?usp=sharing)
 
 ## 📝 License
 
